@@ -1,0 +1,9 @@
+body {
+    background: ivory;
+}
+
+#wrapper {
+    background: skyblue;
+    width: 900px;
+    margin: auto;
+}
