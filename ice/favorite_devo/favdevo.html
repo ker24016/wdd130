@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <table>
+          <tr>
+            <th>Speaker</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Year</th>
+          </tr>
+          <tr>
+            <td>Elder Ulisses Soares</td>
+            <td>Drawing Strength from the Savior’s Love</td>
+            <td>BYU-I Center</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>Sister Jennifer E. Meredith</td>
+            <td>The Great Plan of Happiness</td>
+            <td>BYU-I Center</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>Elder David A. and Sister Susan K. Bednar</td>
+            <td>The Family is Ordained of God</td>
+            <td>BYU-I Center</td>
+            <td>2025</td>
+          </tr>
+        </table>
+        <br>
+        <div id="form_wrapper">
+          <form>
+            <label for="speaker">Speaker: </label><br>
+            <input type="text" id="speaker" name="speaker"><br>
+            <label for="title">Title: </label><br>
+            <input type="text" id="title" name="title"><br>
+            <label for="year">Year: </label><br>
+            <input type="number" id="year" min="1957" max="2100" name="year"><br>
+            <div id="submit_wrapper">
+              <input type="submit" value="Submit" id="submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+  <h1 id="warning">Yo screen too small</h1>
+</body>
+</html>
