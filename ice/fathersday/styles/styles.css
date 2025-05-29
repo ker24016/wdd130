@@ -1,42 +1,38 @@
-/* Add your CSS here to style your father's day page */
-
-nav ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    list-style-type: none;
-    justify-content: space-around;
-    height: 5em;
-    background-image: url("https://cataas.com/cat?0");
-    background-size: contain;
-}
-
-nav ul li {
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 1.5em 0;
-    border: 2px solid lightgrey;
-    text-align: center;
-}
-
 body {
     background-image: url("https://cataas.com/cat?1");
     color: rgba(0, 0, 0, 0)
 }
 
-section:nth-child(4) {
+img {
+    visibility: hidden;
+}
+
+li:nth-child(1) {
     background-image: url("https://cataas.com/cat?2");
     background-size: contain;
 }
 
-section:nth-child(5) {
+li:nth-child(2) {
     background-image: url("https://cataas.com/cat?3");
     background-size: contain;
 }
-section:nth-child(3) {
+
+li:nth-child(3) {
     background-image: url("https://cataas.com/cat?4");
     background-size: contain;
 }
 
+li:nth-child(4) {
+    background-image: url("https://cataas.com/cat?5");
+    background-size: contain;
+}
+
+h1 {
+    background-image: url("https://cataas.com/cat?6");
+    background-size: contain;
+}
+
 img {
-    visibility: hidden;
+    background-image: url("https://cataas.com/cat?7");
+    background-size: contain;
 }
