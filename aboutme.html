@@ -2,9 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>About Me</title>
 </head>
 <body>
-
+    <div id="wrapper">
+        <header>
+            <h1>Portal</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="wwr/index.html">WWR</a>
+                <a href="ice/index.html">ICE</a>
+                <a href="aboutme.html">About Me</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <img src="https://cataas.com/cat" alt="A random cat">
+                <p>Hi! My name is Rylan Kerr and I'm a Software Developer. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate
+                    commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor
+                </p>
+            </section>
+            <section>
+                <h2>Things I've Done</h2>
+                <section class="side_scroll">
+                    <div class="card">
+                        <img src="https://cataas.com/cat" alt="A random cat">
+                        <h3>I did this</h3>
+                        <a>And here it is</a>
+                    </div>
+                    <div class="card">
+                        <img src="https://cataas.com/cat" alt="A random cat">
+                        <h3>I did this</h3>
+                        <a>And here it is</a>
+                    </div>
+                    <div class="card">
+                        <img src="https://cataas.com/cat" alt="A random cat">
+                        <h3>I did this</h3>
+                        <a>And here it is</a>
+                    </div>
+                </section>
+            </section>
+            <section>
+                <h2>Things I Like</h2>
+                <section class="side_scroll">
+                    <div class="card">
+                        <img src="https://cataas.com/cat" alt="A random cat">
+                        <h3>This is cool</h3>
+                        <a>And here it is</a>
+                    </div>
+                    <div class="card">
+                        <img src="https://cataas.com/cat" alt="A random cat">
+                        <h3>This is cool</h3>
+                        <a>And here it is</a>
+                    </div>
+                    <div class="card">
+                        <img src="https://cataas.com/cat" alt="A random cat">
+                        <h3>This is cool</h3>
+                        <a>And here it is</a>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <button type="button" class="collapsible">Contact</button>
+            <div id="contact">
+                <form>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="type">Message Type</label>
+                    <select id="type" name="type">
+                        <option value="bug">Bug report</option>
+                        <--Heh.-->
+                        <option value="slashDevSlashNull">Complaint</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name = "message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <p>&copy; Rylan 2025</p>
+        </footer>
+    </div>
 </body>
 </html>
