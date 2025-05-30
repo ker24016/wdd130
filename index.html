@@ -7,15 +7,14 @@
 <body>
 <div id="wrapper">
     <header>
-        <img src="https://cataas.com/cat?height=100&width=100" alt="A random cat">
-        <h1>Rylan's Portal Page</h1>
+        <h1>Portal</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="wwr/index.html">WWR</a>
+            <a href="ice/index.html">ICE</a>
+            <a href="aboutme.html">About Me</a>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="wwr/index.html">WWR</a>
-        <a href="ice/index.html">ICE</a>
-        <a href="aboutme.html">About Me</a>
-    </nav>
     <main>
         <section>
             <img src="https://cataas.com/cat?height=64&width=64" alt="A random cat">
@@ -35,24 +34,57 @@
                 Quisque blandit elit nec dui sollicitudin, et ornare est interdum. Fusce vel est ut nisl accumsan ullamcorper ac ac sapien. Nulla nec eros vel purus molestie sagittis. Duis venenatis elementum quam at pellentesque. Suspendisse vitae dictum ligula, eu auctor lacus. Quisque dapibus maximus venenatis. Nullam faucibus purus at erat molestie, nec cursus enim convallis. Suspendisse quis nibh ut orci condimentum aliquet semper eu nisl.
             </p>
         </section>
+        <section>
+            <table>
+                <tr>
+                    <th>Site Plan</th>
+                </tr>
+                <tr>
+                    <th>Item</th>
+                    <th>Target</th>
+                    <th>Completed</th>
+                </tr>
+                <tr>
+                    <td>Mockup</td>
+                    <td>Week 1</td>
+                    <td>Week 2</td>
+                </tr>
+                <tr>
+                    <td>Structure</td>
+                    <td>Week 2</td>
+                    <td>Week 2</td>
+                </tr>
+                <tr>
+                    <td>Styling</td>
+                    <td>Week 3</td>
+                    <td>(In progress)</td>
+                </tr>
+                <tr>
+                    <td>Finish</td>
+                    <td>Week 4</td>
+                    <td>(In progress)</td>
+                </tr>
+            </table>
+        </section>
     </main>
     <footer>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="wwr/index.html">WWR</a></li>
-            <li><a href="ice/index.html">ICE</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-        </ul>
-        <h4>Contact</h4>
-        <form>
-            <label for="name">Name: </label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name = "message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <button type="button" class="collapsible">Contact</button>
+        <div id="contact">
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="type">Message Type</label>
+                <select id="type" name="type">
+                    <option value="bug">Bug report</option>
+                    <--Heh.-->
+                    <option value="slashDevSlashNull">Complaint</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="message">Message:</label>
+                <textarea id="message" name = "message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
         <p>&copy; Rylan 2025</p>
     </footer>
 </div>
