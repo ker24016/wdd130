@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>About Me</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <div id="wrapper">
@@ -16,48 +17,48 @@
             </nav>
         </header>
         <main>
-            <div>
-                <img src="https://cataas.com/cat" alt="A random cat">
+            <div id="hello">
+                <img src="https://cataas.com/cat?height=256&width=256" alt="A random cat">
                 <p>Hi! My name is Rylan Kerr and I'm a Software Developer. Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate
                     commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor
                 </p>
             </div>
-            <section>
+            <section id="done">
                 <h2>Things I've Done</h2>
                 <section class="side_scroll">
                     <div class="card">
-                        <img src="https://cataas.com/cat" alt="A random cat">
+                        <img src="https://cataas.com/cat?height=256&width=256" alt="A random cat">
                         <h3>I did this</h3>
                         <a>And here it is</a>
                     </div>
                     <div class="card">
-                        <img src="https://cataas.com/cat" alt="A random cat">
+                        <img src="https://cataas.com/cat?height=256&width=256" alt="A random cat">
                         <h3>I did this</h3>
                         <a>And here it is</a>
                     </div>
                     <div class="card">
-                        <img src="https://cataas.com/cat" alt="A random cat">
+                        <img src="https://cataas.com/cat?height=256&width=256" alt="A random cat">
                         <h3>I did this</h3>
                         <a>And here it is</a>
                     </div>
                 </section>
             </section>
-            <section>
+            <section id = "like">
                 <h2>Things I Like</h2>
                 <div class="side_scroll">
                     <div class="card">
-                        <img src="https://cataas.com/cat" alt="A random cat">
+                        <img src="https://cataas.com/cat?height=256&width=256" alt="A random cat">
                         <h3>This is cool</h3>
                         <a>And here it is</a>
                     </div>
                     <div class="card">
-                        <img src="https://cataas.com/cat" alt="A random cat">
+                        <img src="https://cataas.com/cat?height=256&width=256" alt="A random cat">
                         <h3>This is cool</h3>
                         <a>And here it is</a>
                     </div>
                     <div class="card">
-                        <img src="https://cataas.com/cat" alt="A random cat">
+                        <img src="https://cataas.com/cat?height=256&width=256" alt="A random cat">
                         <h3>This is cool</h3>
                         <a>And here it is</a>
                     </div>
@@ -65,12 +66,12 @@
             </section>
         </main>
         <footer>
-            <button type="button" class="collapsible">Contact</button>
+            <button type="button" id="collapsible">Contact</button>
             <div id="contact">
                 <form>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
-                    <label for="type">Message Type</label>
+                    <label for="type">Message Type:</label>
                     <select id="type" name="type">
                         <option value="bug">Bug report</option>
                         <!--Heh.-->
@@ -79,11 +80,24 @@
                     </select>
                     <label for="message">Message:</label>
                     <textarea id="message" name = "message" required></textarea>
-                    <button type="submit">Send</button>
+                    <button type="submit" id="submit">Send</button>
                 </form>
             </div>
-            <p>&copy; Rylan 2025</p>
+            <p id="copyright">&copy; Rylan 2025</p>
         </footer>
     </div>
 </body>
+<script>
+    var coll = document.getElementById("collapsible")
+
+    coll.addEventListener("click", function() {
+        this.classList.toggle("active");
+        var contact = this.nextElementSibling;
+        if (contact.style.display === "block") {
+            contact.style.display = "none";
+        } else {
+            contact.style.display = "block";
+        }
+    });
+</script>
 </html>

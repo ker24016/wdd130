@@ -12,14 +12,13 @@ body {
     font-family: "Chocolate Classical Sans", sans-serif;
 }
 
-#wrapper {
-    width: 100%;
-    box-sizing: border-box;
-}
-
 h1 {
     font-family: "Alfa Slab One", serif;
     color: black;
+}
+
+header {
+    background-image: url("https://cataas.com/cat");
 }
 
 header h1 {
@@ -128,4 +127,48 @@ tr:nth-child(2n + 1) {
 #copyright {
     width: 100%;
     text-align: center;
+}
+
+/*For the about me*/
+#hello img {
+    float: left;
+    margin: 0.5em;
+}
+
+#done {
+    background-color: var(--color1);
+}
+
+#done, #like {
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side_scroll {
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-self: center;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.side_scroll .card {
+    border: 1px solid black;
+    margin: 0 5px 0 0;
+    background-color: whitesmoke;
+}
+
+.side_scroll .card:last-child {
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.75em;
 }
