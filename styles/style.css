@@ -53,6 +53,7 @@ main {
 #deadly_fun img {
     float: left;
     margin: 0.5em;
+    width: 256px;
 }
 
 #ice img {
@@ -163,6 +164,7 @@ tr:nth-child(2n + 1) {
     border: 1px solid black;
     margin: 0 5px 0 0;
     background-color: whitesmoke;
+    padding: 5px;
 }
 
 .side_scroll .card:last-child {
