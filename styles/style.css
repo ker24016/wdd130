@@ -32,7 +32,7 @@ header h1 {
 
 nav {
     display: grid;
-    grid-template: 1fr / repeat(4, 1fr);
+    grid-template: 1fr / repeat(5, 1fr);
     justify-content: center;
     background-color: var(--color2)
 }
